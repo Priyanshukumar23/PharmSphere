@@ -3,7 +3,7 @@
 import { prisma } from "@/lib/prisma";
 import { Dimension, DisplayUnit, toBaseQuantity, calculateTotal } from "@/lib/units";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { Decimal } from "decimal.js";
 
 export async function createOrder(productId: string, requestedQuantity: number, requestedUnit: DisplayUnit) {
@@ -101,8 +101,8 @@ export async function createCheckoutOrder(
   }
 
   let totalAmountInr = new Decimal(0);
-  const itemsToCreate = [];
-  const productUpdates = [];
+  const itemsToCreate: any[] = [];
+  const productUpdates: any[] = [];
 
   for (const item of cartItems) {
     const product = await prisma.product.findUnique({ where: { id: item.productId } });

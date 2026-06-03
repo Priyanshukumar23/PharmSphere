@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { getOrders, getProducts } from "../actions/products";
 import { getAllQueries } from "../actions/queries";

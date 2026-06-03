@@ -12,7 +12,9 @@ export function CancelOrderButton({ orderId }: { orderId: string }) {
     try {
       await cancelOrder(orderId);
       alert("Order cancelled successfully!");
-      window.location.reload();
+      if (typeof window !== "undefined") {
+        window.location.reload();
+      }
     } catch (e: any) {
       alert(e.message || "Failed to cancel order");
       setIsProcessing(false);

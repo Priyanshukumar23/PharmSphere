@@ -3,7 +3,7 @@
 import { prisma } from "@/lib/prisma";
 import { Dimension } from "@/lib/units";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { revalidatePath } from "next/cache";
 
 export async function getProducts(search?: string, minPrice?: number, maxPrice?: number) {

@@ -2,7 +2,7 @@ import { getProducts } from "../actions/products";
 import Link from "next/link";
 import { formatInr } from "@/lib/units";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { AddToCartButton } from "@/components/AddToCartButton";
 
 export default async function ProductsPage({ searchParams }: { searchParams: { q?: string, min?: string, max?: string } }) {

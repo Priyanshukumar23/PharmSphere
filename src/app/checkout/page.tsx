@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCart } from "@/components/CartProvider";
 import { useRouter } from "next/navigation";
 import { createCheckoutOrder } from "@/app/actions/orders";
@@ -15,10 +15,18 @@ export default function CheckoutPage() {
   const [showUpiMock, setShowUpiMock] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const [mounted, setMounted] = useState(false);
+
   const totalCost = items.reduce((sum, item) => sum + (item.itemTotalInr || 0), 0);
 
-  if (items.length === 0) {
-    router.push("/cart");
+  useEffect(() => {
+    setMounted(true);
+    if (items.length === 0) {
+      router.push("/cart");
+    }
+  }, [items, router]);
+
+  if (!mounted || items.length === 0) {
     return null;
   }
 

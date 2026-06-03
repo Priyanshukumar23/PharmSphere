@@ -2,7 +2,7 @@
 
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { QueryStatus } from "@prisma/client";
 
 export async function createQuery(subject: string, message: string) {
