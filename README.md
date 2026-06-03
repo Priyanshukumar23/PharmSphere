@@ -7,7 +7,7 @@ This project is a high-precision inventory and order management system built for
 - **Frontend & Backend**: Next.js (App Router, Server Actions)
 - **Database**: PostgreSQL (Neon)
 - **ORM**: Prisma
-- **Auth**: NextAuth.js (Role-based: ADMIN, SELLER)
+- **Auth**: NextAuth.js (Role-based: ADMIN, SELLER, BUYER)
 - **Styling**: Custom CSS (No heavy UI libraries, focus on minimalism and speed)
 
 ## Base Unit Storage Strategy
@@ -63,10 +63,10 @@ Handling varying units (like `kg`, `g`, `L`, `mL`) and maintaining pricing preci
    ```
 
 ## Roles & Authentication
-The app features two roles:
-- **Admin**: Can view inventory, create products, set prices, and monitor all orders in internal Base Units alongside User Units.
-- **Seller**: Can browse products, view real-time dynamic quotations across varying units, and place orders.
+The application leverages role-based access control with three distinct user roles:
 
-Credentials for testing:
-- Admin: `admin@test.com` (Password: `password123`)
-- Seller: `seller@test.com` (Password: `password123`)
+- **Admin**: Has full platform oversight. The Admin can monitor global orders, manage user accounts (restrict or unrestrict buyers and sellers to prevent bad actors from interacting with the marketplace), and resolve support queries submitted by users.
+- **Seller**: Responsible for maintaining the catalog. Sellers can create, update, and delete their own medical products. They can track their total inventory, monitor incoming sales, and contact support.
+- **Buyer**: The end-user. Buyers can browse the global catalog, view dynamic quotations for varying weights/volumes, add items to their cart, complete the checkout process (via UPI or COD), and manage their personal profiles.
+
+*(Note: Users can create their own accounts via the Register page, and the default role assigned is BUYER)*
