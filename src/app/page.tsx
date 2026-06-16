@@ -10,7 +10,7 @@ export default async function Home() {
 
 
       <main className="container" style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: 'center', padding: "4rem 1rem" }}>
-        <h2 style={{ fontSize: '3rem', color: "var(--foreground)", marginBottom: '1rem' }}>Welcome to AssamMed</h2>
+        <h2 style={{ fontSize: '3rem', color: "var(--foreground)", marginBottom: '1rem' }}>Welcome to PharmSphere</h2>
         <p style={{ color: 'var(--muted-foreground)', fontSize: "1.25rem", maxWidth: "600px", marginBottom: '2rem' }}>
           Your high-precision medical inventory and order management system. Providing accurate, reliable supply chains for the modern world.
         </p>
@@ -28,7 +28,7 @@ export default async function Home() {
       </main>
       
       <footer style={{ background: "var(--muted)", padding: "2rem 0", textAlign: "center", borderTop: "1px solid var(--border)" }}>
-        <p style={{ margin: 0, color: "var(--muted-foreground)" }}>&copy; {new Date().getFullYear()} AssamMed. All rights reserved.</p>
+        <p style={{ margin: 0, color: "var(--muted-foreground)" }}>&copy; {new Date().getFullYear()} PharmSphere. All rights reserved.</p>
       </footer>
     </div>
   );

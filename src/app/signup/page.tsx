@@ -28,7 +28,7 @@ export default function SignupPage() {
 
   return (
     <div className="container" style={{ maxWidth: "400px", marginTop: "4rem" }}>
-      <h2 style={{ color: "var(--primary)" }}>Sign Up for AssamMed</h2>
+      <h2 style={{ color: "var(--primary)" }}>Sign Up for PharmSphere</h2>
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", marginTop: "1.5rem" }}>
         {error && <div style={{ color: "var(--error)", background: "#fee2e2", padding: "0.5rem", borderRadius: "var(--radius)" }}>{error}</div>}
         

@@ -37,7 +37,7 @@ function LoginForm() {
 
   return (
     <div className="container" style={{ maxWidth: "400px", marginTop: "4rem" }}>
-      <h2 style={{ color: "var(--primary)" }}>Login to AssamMed</h2>
+      <h2 style={{ color: "var(--primary)" }}>Login to PharmSphere</h2>
       {registered && <div style={{ color: "var(--success)", marginTop: "1rem", fontWeight: "bold" }}>Registration successful! Please log in.</div>}
       
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", marginTop: "1.5rem" }}>

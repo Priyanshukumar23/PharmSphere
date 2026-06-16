@@ -4,8 +4,8 @@ import { Header } from "@/components/Header";
 import { CartProvider } from "@/components/CartProvider";
 
 export const metadata: Metadata = {
-  title: "AssamMed Inventory & Order Management",
-  description: "High-precision inventory and order management system.",
+  title: "PharmSphere Inventory & Order Management",
+  description: "High-precision inventory and order management system",
 };
 
 import { NextAuthProvider } from "@/components/NextAuthProvider";

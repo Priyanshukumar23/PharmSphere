@@ -1,7 +1,16 @@
-# AssamMed Inventory & Order Management System
+<div align="center">
+  <img src="public/images/banner.png" alt="PharmSphere Banner" width="100%" />
+  
+  <br />
+  <br />
+
+  <img src="public/images/logo.png" alt="PharmSphere Logo" width="150" />
+
+  <h1>PharmSphere Inventory & Order Management System</h1>
+</div>
 
 ## Project Overview
-This project is a high-precision inventory and order management system built for AssamMedChem. It features a robust conversion engine to handle extreme precision and multiple units for mass, volume, and count.
+This project is a high-precision inventory and order management system built for PharmSphere. It features a robust conversion engine to handle extreme precision and multiple units for mass, volume, and count.
 
 ## Tech Stack
 - **Frontend & Backend**: Next.js (App Router, Server Actions)

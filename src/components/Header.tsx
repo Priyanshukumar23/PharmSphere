@@ -13,7 +13,7 @@ export function Header() {
   return (
     <header style={{ background: "var(--card-bg)", borderBottom: "1px solid var(--border)", padding: "1rem 2rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
       <Link href="/" style={{ fontSize: "1.5rem", fontWeight: "bold", color: "var(--primary)", textDecoration: "none" }}>
-        AssamMed
+        PharmSphere
       </Link>
       
       <nav style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
