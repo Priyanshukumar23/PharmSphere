@@ -1,15 +1,19 @@
 :root {
-  --background: #fffdf5; /* light yellow */
-  --card-bg: #ffffff;
-  --foreground: #2d3748;
-  --primary: #f97316; /* orange */
-  --primary-hover: #ea580c;
-  --border: #fca5a5;
-  --error: #ef4444;
-  --success: #22c55e; /* green */
-  --muted: #fef9c3;
-  --muted-foreground: #71717a;
-  --radius: 0.5rem;
+  /* Default Light Theme - Premium PharmSphere */
+  --background: #FAF8F3;
+  --card-bg: #FFFDFC;
+  --foreground: #2D2A26;
+  --primary: #D98E04;
+  --primary-hover: #b87903;
+  --border: #DDD6C8;
+  --error: #C96A6A;
+  --success: #5D7C4D;
+  --warning: #C68A2D;
+  --muted: #F7F4EE;
+  --muted-foreground: #6F6A63;
+  --secondary: #8A9A5B;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(45, 42, 38, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +26,43 @@
     --muted-foreground: #a1a1aa;
     --primary: #f97316;
     --primary-hover: #fb923c;
+    --error: #ef4444;
+    --success: #22c55e;
+    --radius: 0.5rem;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
+}
+
+:root[data-theme="light"] {
+  --background: #FAF8F3;
+  --card-bg: #FFFDFC;
+  --foreground: #2D2A26;
+  --primary: #D98E04;
+  --primary-hover: #b87903;
+  --border: #DDD6C8;
+  --error: #C96A6A;
+  --success: #5D7C4D;
+  --warning: #C68A2D;
+  --muted: #F7F4EE;
+  --muted-foreground: #6F6A63;
+  --secondary: #8A9A5B;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(45, 42, 38, 0.05);
+}
+
+:root[data-theme="dark"] {
+  --background: #1a1a1a;
+  --card-bg: #2d2d2d;
+  --foreground: #fefefe;
+  --border: #444444;
+  --muted: #3a3a3a;
+  --muted-foreground: #a1a1aa;
+  --primary: #f97316;
+  --primary-hover: #fb923c;
+  --error: #ef4444;
+  --success: #22c55e;
+  --radius: 0.5rem;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 html,
